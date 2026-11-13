@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Nisa ♡</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #f8f1ed;
+    color: #493a38;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    text-align: center;
+}
+
+.content {
+    max-width: 550px;
+    animation: fadeIn 2s ease;
+}
+
+.small {
+    font-size: 11px;
+    letter-spacing: 5px;
+    color: #b17d7b;
+    margin-bottom: 25px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(42px, 10vw, 68px);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+h1 span {
+    color: #bd8585;
+    font-style: italic;
+}
+
+.line {
+    width: 55px;
+    height: 1px;
+    background: #bd8585;
+    margin: 30px auto;
+}
+
+.description {
+    font-size: 13px;
+    line-height: 2;
+    color: #8c7772;
+    margin-bottom: 30px;
+}
+
+button {
+    border: 1px solid #bd8585;
+    background: transparent;
+    color: #9c6969;
+    padding: 13px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: inherit;
+    letter-spacing: 1px;
+    transition: .3s;
+}
+
+button:hover {
+    background: #bd8585;
+    color: white;
+}
+
+#letter {
+    display: none;
+    margin-top: 40px;
+    animation: fadeIn 1.5s ease;
+}
+
+.letter-box {
+    background: rgba(255,255,255,.65);
+    border: 1px solid #ead9d4;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 10px 40px rgba(120,80,70,.06);
+}
+
+.letter-box h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.letter-box p {
+    font-size: 13px;
+    line-height: 2.1;
+    color: #796965;
+    margin-bottom: 15px;
+}
+
+.signature {
+    text-align: right;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 20px;
+    color: #b17d7b;
+    margin-top: 25px;
+}
+
+footer {
+    margin-top: 35px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #b69b94;
+}
+
+.heart {
+    position: fixed;
+    color: #d7a2a0;
+    font-size: 16px;
+    pointer-events: none;
+    animation: float 7s linear infinite;
+    opacity: 0;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(100vh) rotate(0deg);
+        opacity: 0;
+    }
+    20% { opacity: .7; }
+    100% {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.music {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 11px;
+    color: #a77c76;
+}
+</style>
+</head>
+
+<body>
+
+<audio id="song" loop>
+    <source src="hal-bahagia.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+<div class="content">
+
+    <div class="small">A LITTLE SOMETHING FOR YOU</div>
+
+    <h1>
+        For Someone<br>
+        <span>Beautiful.</span>
+    </h1>
+
+    <div class="line"></div>
+
+    <p class="description">
+        There are many beautiful things in this world,<br>
+        but somehow, you always stand out.
+    </p>
+
+    <button onclick="openLetter()">
+        Open this little letter ♡
+    </button>
+
+    <div id="letter">
+        <div class="letter-box">
+
+            <h2>Dear Nisa,</h2>
+
+            <p>
+                Aku mungkin bukan seseorang yang pandai
+                merangkai kata-kata indah.
+                Tapi ada satu hal yang ingin aku sampaikan.
+            </p>
+
+            <p>
+                Kamu itu indah, Nisa.
+                Bukan hanya tentang wajahmu yang cantik,
+                tetapi juga tentang hal-hal kecil yang
+                membuatmu menjadi dirimu sendiri.
+            </p>
+
+            <p>
+                Aku harap kamu tidak pernah lupa
+                betapa berharganya dirimu.
+                Dunia punya banyak hal indah,
+                dan salah satunya adalah kamu.
+            </p>
+
+            <p>
+                Terima kasih sudah menjadi bagian
+                dari cerita yang ingin terus aku kenang.
+                Semoga hari-harimu selalu dipenuhi
+                hal-hal baik.
+            </p>
+
+            <div class="signature">
+                from yon for nisa ♡
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        MADE WITH LOVE · 2026
+    </footer>
+
+</div>
+</div>
+
+<div class="music">♫ A little melody for you</div>
+
+<script>
+function openLetter() {
+    document.getElementById("letter").style.display = "block";
+
+    const song = document.getElementById("song");
+    song.play().catch(() => {
+        alert("Tambahkan file musik untuk memutar lagu ♡");
+    });
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "♡";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration = (5 + Math.random() * 5) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 10000);
+}
+
+setInterval(createHeart, 800);
+</script>
+
+</body>
+</html>
